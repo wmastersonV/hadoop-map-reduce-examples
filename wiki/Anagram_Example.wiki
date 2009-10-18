@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+#labels Anagram,Example
+
+= Introduction =
+
+Anagram example:
+*Mapper Class* : com.hadoop.examples.anagrams.AnagramMapper
+*Reducer Class* : com.hadoop.examples.anagrams.AnagramReducer
+
+= Details =
+The Data Set download for this example is available at 
+http://www.gutenberg.org/dirs/etext02/mword10.zip
