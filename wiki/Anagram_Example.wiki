@@ -1,5 +1,5 @@
+#summary Map/Reduce program to find out all the anagrams in the given data corpus
 #labels Anagram,Example
-Map/Reduce program to find out all the anagrams in the given data corpus
 
 == Introduction ==
 
