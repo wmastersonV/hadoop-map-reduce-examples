@@ -1,0 +1,14 @@
+#summary Introduction to using the examples and general flow of the project.
+
+== Introduction ==
+
+The purpose of this project is to have a comprehensive place to host Map/Reduce examples with related Data Sets that start out simple and then go on to more complex examples that exploit the Hadoop Map/Reduce technology.
+
+
+== Getting Started ==
+
+To start with it would make a lot of sense to have a minimal pseudo Hadoop Map/Reduce setup from which you can run simple examples, this will give you a good flavor of what Map/Reduce is and then once you are comfortable you can move on to other complex Map/Reduce examples. 
+
+=== First Steps ===
+There is a wonderful tutorial posted by Yahoo Developer Network you can find it here 
+[http://developer.yahoo.com/hadoop/tutorial/module3.html Getting Started With Hadoop]
