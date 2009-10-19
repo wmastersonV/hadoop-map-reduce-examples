@@ -1,4 +1,5 @@
 #summary Map Reduce Program to group articles in Wikipedia by their GEO location.
+#labels Wikipedia,DBPedia
 
 = Introduction =
 
