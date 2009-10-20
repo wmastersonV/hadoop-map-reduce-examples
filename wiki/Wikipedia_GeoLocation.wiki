@@ -5,7 +5,7 @@
 Db-Pedia has a nice data dump of geo locations of wikipedia articles the objective is to group articles to-gather by their geo location and dump the output.
 
 == Data Set == 
-{http://downloads.dbpedia.org/3.3/en/pagelinks_en.csv.bz2 Geo Location Data From DB-Pedia in CSV format]
+[http://downloads.dbpedia.org/3.3/en/pagelinks_en.csv.bz2 Geo Location Data From DB-Pedia in CSV format]
 Geographic coordinates extracted from Wikipedia.
 
 
