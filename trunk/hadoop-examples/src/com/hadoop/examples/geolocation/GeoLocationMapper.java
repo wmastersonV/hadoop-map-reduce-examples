@@ -1,3 +1,20 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.hadoop.examples.geolocation;
 
 import java.io.IOException;
@@ -11,6 +28,16 @@ import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reporter;
 
+/**
+ * The mapper class is just responsible for rounding off the Geo Location 
+ * and creating a key like this <b> (RoundedGeoLat,RoundedGeoLong) </b>
+ * and HTML decode the article title and pass it onto the output collector.
+ * all the locations will be rounded off to the closes geo point and be grouped togather
+ * we can write advanced distance based keys also (feel free to extend the example) 
+ * @author magbeth (Subbu Iyer)
+ *
+ */
+
 public class GeoLocationMapper extends MapReduceBase implements
 		Mapper<LongWritable, Text, Text, Text> {
 
@@ -19,7 +46,7 @@ public class GeoLocationMapper extends MapReduceBase implements
 	private Text geoLocationKey = new Text();
 	private Text geoLocationName = new Text();
 
-	@Override
+	
 	public void map(LongWritable key, Text value,
 			OutputCollector<Text, Text> outputCollector, Reporter reporter)
 			throws IOException {
