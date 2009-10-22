@@ -22,6 +22,7 @@
 		<echo message="Available targets are:"/>
 		<echo message=""/>
 		<echo message="build     --> Build the application"/>
+		<echo message="pacakage  --> create the jar"/>
 	</target>
 
 	<target name="build" description="Compile main source tree java files">
