@@ -45,7 +45,6 @@ public class GeoLocationJob {
 		conf.setOutputValueClass(Text.class);
 
 		conf.setMapperClass(GeoLocationMapper.class);
-		// conf.setCombinerClass(AnagramReducer.class);
 		conf.setReducerClass(GeoLocationReducer.class);
 
 		conf.setInputFormat(TextInputFormat.class);
