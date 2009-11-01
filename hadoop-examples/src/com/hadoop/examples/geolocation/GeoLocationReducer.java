@@ -40,17 +40,17 @@ public class GeoLocationReducer extends MapReduceBase implements
 	private Text outputValue = new Text();
 
 	
-	public void reduce(Text anagramKey, Iterator<Text> anagramValues,
+	public void reduce(Text geoLocationKey, Iterator<Text> geoLocationValues,
 			OutputCollector<Text, Text> results, Reporter reporter)
 			throws IOException {
 		// in this case the reducer just creates a list so that the data can
 		// used later
 		String outputText = "";
-		while (anagramValues.hasNext()) {
-			Text locationName = anagramValues.next();
+		while (geoLocationValues.hasNext()) {
+			Text locationName = geoLocationValues.next();
 			outputText = outputText + locationName.toString() + " ,";
 		}
-		outputKey.set(anagramKey.toString());
+		outputKey.set(geoLocationKey.toString());
 		outputValue.set(outputText);
 		results.collect(outputKey, outputValue);
 	}
