@@ -72,6 +72,7 @@ public class GeoLocationMapper extends MapReduceBase implements
 					+ String.valueOf(roundedLong) + ")";
 			String locationName = URLDecoder.decode(articleName, "UTF-8");
 			locationName = locationName.replace("_", " ");
+			locationName = locationName + ":(" + lat + "," + lang + ")";
 			geoLocationKey.set(locationKey);
 			geoLocationName.set(locationName);
 			outputCollector.collect(geoLocationKey, geoLocationName);
